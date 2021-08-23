@@ -8,4 +8,4 @@ It's been a while since the last release. The main improvements in this version 
 - Apple sign-in support.
 - Additional scenario criteria, this time mainly for ProductsModule.
 
-There's more, head to the [changelog](Changelog/0.33.md) to see the full list of changes and upgrade information.
+There's more, including couple of breaking changes, so head to the [changelog](changelog/0.33.md) to see the full list of changes and upgrade information.
