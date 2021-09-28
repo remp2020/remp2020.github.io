@@ -1,5 +1,9 @@
 ## REMP Technical news
 
+### 28-Sep-2021: Hotfix release for SubscriptionsModule
+
+Form for managing subscription types is extendible through data-providers. Unfortunately due to a bug the data-providers were not correctly handled during the form submission process. Update your `crm-subscriptions-module` to `0.33.1` ([changelog](https://github.com/remp2020/crm-subscriptions-module/releases/tag/0.33.1)).
+
 ### 09-Sep-2021: New version of REMP tools is available (0.28.0)
 
 This is another bigger release, which took us more than two months to finalize. The main improvements are:
