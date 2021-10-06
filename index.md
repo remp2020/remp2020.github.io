@@ -1,5 +1,16 @@
 ## REMP Technical news
 
+### 06-Oct-2021: New version of CRM is available (0.34.0)
+
+This is mainly maintenance release focusing on improving existing features. The main improvements are:
+
+- Significant speed up of Scenario and Hermes workers. You can now also configure min/max idle times for the worker in case you're not satisfied with the provided defaults.
+- Upgrades now support upgrade of subsequent subscriptions. Up until now, only the actual subscription was upgraded and any following subscription would remain untouched. This version brings support for upgrade of subsequent subscriptions if they have same subscription type as upgraded subscription.
+  - This feature is not enabled by default and you need to enable it manually. See [README](https://github.com/remp2020/crm-upgrades-module/#subsequent-upgrades) for more information.
+- Audit log had a bug which caused the transition from _some value_ to _NULL_ not to be tracked correctly.
+
+There's more, including couple of breaking changes that might affect your own modules. Head to the [changelog](changelog/crm/0.34.md) to see the full list of changes and upgrade information.
+
 ### 28-Sep-2021: Hotfix release for SubscriptionsModule
 
 Form for managing subscription types is extendible through data-providers. Unfortunately due to a bug the data-providers were not correctly handled during the form submission process. Update your `crm-subscriptions-module` to `0.33.1` ([changelog](https://github.com/remp2020/crm-subscriptions-module/releases/tag/0.33.1)).
