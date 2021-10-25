@@ -2,7 +2,11 @@
 
 ### 25-Oct-2021: New version of CRM is available (0.35.0)
 
-This release focuses mainly on improving stability, but brings some interesting features.
+**Technical announcement:** We've been successfully using CRM with MySQL 8 in production and we believe it's stable for everyone to use. In order to use the latest features of MySQL 8, we will need to drop MySQL 5.7 support in the next months. 
+
+The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+Now for the actual release. This release focuses mainly on improving stability, but brings some interesting features.
 
 - Bump of minimal version of PHP to 7.4.
 - Fix of inefficient API handler initialization, possibly improving speed of all API endpoints.
