@@ -1,5 +1,16 @@
 ## REMP Technical news
 
+### 25-Oct-2021: New version of CRM is available (0.35.0)
+
+This release focuses mainly on improving stability, but brings some interesting features.
+
+- Bump of minimal version of PHP to 7.4.
+- Fix of inefficient API handler initialization, possibly improving speed of all API endpoints.
+- Support for Redis Sentinel.
+- New Scenario A/B test element.
+
+Check the [changelog](changelog/crm/0.35.md) to see the full list of changes and upgrade information.
+
 ### 06-Oct-2021: New version of CRM is available (0.34.0)
 
 This is mainly maintenance release focusing on improving existing features. The main improvements are:
