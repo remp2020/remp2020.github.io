@@ -2,7 +2,7 @@
 
 ### 26-Oct-2021: Hotfix release for ApplicationModule
 
-- Previous version optimized and speed up API. Unfortunately it introduced bug which breaks initial CRM installation _(application is unable to create required tables)_. This hotfix release contains fix for `Core::command()`. Update your `crm-application-module` to `0.35.1` ([changelog](https://github.com/remp2020/crm-application-module/releases/tag/0.35.1)).
+Previous version optimized and speed up API. Unfortunately it introduced bug which breaks initial CRM installation _(application is unable to create required tables)_. This hotfix release contains fix for `Core::command()`. Update your `crm-application-module` to `0.35.1` ([changelog](https://github.com/remp2020/crm-application-module/releases/tag/0.35.1)).
 
 ### 25-Oct-2021: New version of CRM is available (0.35.0)
 
