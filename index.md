@@ -1,12 +1,12 @@
 ## REMP Technical news
 
-### 18-Nov-2021: New version of CRM is available (0.36)
-
 **Technical announcement:** We've been successfully using CRM with MySQL 8 in production and we believe it's stable for everyone to use. In order to use the latest features of MySQL 8, we will need to drop MySQL 5.7 support in the next months. 
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-Now for the actual release. This time it's more about internal improvements and fixing performance issues we found.
+### 18-Nov-2021: New version of CRM is available (0.36)
+
+This time it's more about internal improvements and bugfixes.
 
 There's one note-worthy _experimental_ feature to mention: Google/Apple pay payments in combination with Stripe gateway. We're currently testing the implementation and we'll probably be extending this in the future so it can be used with Tatrabanka. Stay tuned.
 
