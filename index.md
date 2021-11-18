@@ -1,16 +1,24 @@
 ## REMP Technical news
 
-### 26-Oct-2021: Hotfix release for ApplicationModule
-
-Previous version optimized and speed up API. Unfortunately it introduced bug which breaks initial CRM installation _(application is unable to create required tables)_. This hotfix release contains fix for `Core::command()`. Update your `crm-application-module` to `0.35.1` ([changelog](https://github.com/remp2020/crm-application-module/releases/tag/0.35.1)).
-
-### 25-Oct-2021: New version of CRM is available (0.35.0)
+### 18-Nov-2021: New version of CRM is available (0.36)
 
 **Technical announcement:** We've been successfully using CRM with MySQL 8 in production and we believe it's stable for everyone to use. In order to use the latest features of MySQL 8, we will need to drop MySQL 5.7 support in the next months. 
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-Now for the actual release. This release focuses mainly on improving stability, but brings some interesting features.
+Now for the actual release. This time it's more about internal improvements and fixing performance issues we found.
+
+There's one note-worthy _experimental_ feature to mention: Google/Apple pay payments in combination with Stripe gateway. We're currently testing the implementation and we'll probably be extending this in the future so it can be used with Tatrabanka. Stay tuned.
+
+Check the [changelog](changelog/crm/0.36.md) to see the full list of changes and upgrade information.
+
+### 26-Oct-2021: Hotfix release for ApplicationModule
+
+Previous version optimized and speed up API. Unfortunately it introduced bug which breaks initial CRM installation _(application is unable to create required tables)_. This hotfix release contains fix for `Core::command()`. Update your `crm-application-module` to `0.35.1` ([changelog](https://github.com/remp2020/crm-application-module/releases/tag/0.35.1)).
+
+### 25-Oct-2021: New version of CRM is available (0.35)
+
+This release focuses mainly on improving stability, but brings some interesting features.
 
 - Bump of minimal version of PHP to 7.4.
 - Fix of inefficient API handler initialization, possibly improving speed of all API endpoints.
@@ -19,7 +27,7 @@ Now for the actual release. This release focuses mainly on improving stability, 
 
 Check the [changelog](changelog/crm/0.35.md) to see the full list of changes and upgrade information.
 
-### 06-Oct-2021: New version of CRM is available (0.34.0)
+### 06-Oct-2021: New version of CRM is available (0.34)
 
 This is mainly maintenance release focusing on improving existing features. The main improvements are:
 
@@ -55,7 +63,7 @@ Recently CRM added support for read-only connections in case you have multiple d
 
 There have been issues reported with access to CRM admin caused by external translation libraries. Please update your `crm-application-module` to `0.33.1`. ([changelog](https://github.com/remp2020/crm-application-module/releases/tag/0.33.1))
 
-### 23-Aug-2021: New version of CRM is available (0.33.0)
+### 23-Aug-2021: New version of CRM is available (0.33)
 
 It's been a while since the last release. The main improvements in this version are:
 
