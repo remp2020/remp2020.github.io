@@ -4,6 +4,17 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 18-Nov-2021: New version of REMP tools is available (0.29)
+
+Another two months passed by and a lot features landed in this release:
+
+- Welcome email when user subscribes to the newsletter.
+- Support for Redis Sentinel across all of the applications.
+- New Mailer's job/batch option to prepare queue for sending without actual sending to see how many users will receive an email.
+- Beam's property filter now correctly filters all of the data screens (not only the main dashboard).
+
+And much more. Head to the [changelog](changelog/remp/0.29.md) to see all of the changes in this version and don't forget to also update your Tracker and Segment API binaries (available [here](https://github.com/remp2020/remp/releases/tag/0.29.0)).
+
 ### 18-Nov-2021: New version of CRM is available (0.36)
 
 This time it's more about internal improvements and bugfixes.
