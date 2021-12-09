@@ -4,6 +4,17 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 09-Dec-2021: New version of CRM is available (0.37)
+
+Main features of this release are:
+
+- Changes related to the Payments module allowing publishers to gain more control over payments right before the payment is charged. This brings possibilities for custom wallet implementation and more.
+- Deletes for products.
+- API to delete the CRM (primarily intended for mobile apps).
+- Stability improvements.
+
+Check the [changelog](changelog/crm/0.37.md) to see the full list of changes and upgrade information.
+
 ### 18-Nov-2021: New version of REMP tools is available (0.29)
 
 Another two months passed by and a lot features landed in this release:
