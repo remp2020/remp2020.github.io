@@ -4,6 +4,10 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 24-Jan-2022: Hotfix release for Scenarios module (0.37.1)
+
+CRM was generating notices on scenarios detail because of the dependency on the currently-internal module. Please update the `crm-scenarios-module` to fix this issue. ([changelog](https://github.com/remp2020/crm-scenarios-module/releases/tag/0.37.1))
+
 ### 09-Dec-2021: New version of CRM is available (0.37)
 
 Main features of this release are:
