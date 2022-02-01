@@ -4,6 +4,10 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 01-Feb-2022: Hotfix release for Salesfunnel module (0.37.1)
+
+Handling of sales funnel meta values got broken in the latest release and CRM was not able to save new funnel. If you use this flow to create new funnels (opposing to using seeders), please update to the latest version. ([changelog](https://github.com/remp2020/crm-salesfunnel-module/releases/tag/0.37.1))
+
 ### 24-Jan-2022: Hotfix release for Scenarios module (0.37.1)
 
 CRM was generating notices on scenarios detail because of the dependency on the currently-internal module. Please update the `crm-scenarios-module` to fix this issue. ([changelog](https://github.com/remp2020/crm-scenarios-module/releases/tag/0.37.1))
