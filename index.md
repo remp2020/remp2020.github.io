@@ -4,6 +4,16 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 10-Feb-2022: New version of REMP tools is available (0.30.0)
+
+Almost three months passed since the latest version, yet this is mainly a maintenance release:
+
+- Google fonts are no longer used in the Campaign banners due to the legal changes and pagespeed affection.
+- It's now possible to configure error tracking sample rate for Campaign's showtime request.
+- Mailer's subscribe API now accepts variant_code when manipulating the subscription.
+
+And numerous fixes and optimizations. Head to the [changelog](changelog/remp/0.30.md) to see all of the changes in this version and don't forget to also update your Tracker and Segment API binaries (available [here](https://github.com/remp2020/remp/releases/tag/0.30.0)).
+
 ### 01-Feb-2022: Hotfix release for Salesfunnel module (0.37.1)
 
 Handling of sales funnel meta values got broken in the latest release and CRM was not able to save new funnel. If you use this flow to create new funnels (opposing to using seeders), please update to the latest version. ([changelog](https://github.com/remp2020/crm-salesfunnel-module/releases/tag/0.37.1))
