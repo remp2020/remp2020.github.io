@@ -10,7 +10,7 @@ We pushed this release as late as possible. This might also be the last release 
 
 - We now officialy support and recommend Redis 6.2. If you're on the older version, you should be fine for now, but we won't be able to test Redis 3 as we were until now.
 - Users module now supports "preregistration" flow, which breaks couple of breaking changes. This flow is intended for systems with imported users, which you need to track for internal purposes, but their account shouldn't be activated yet.
-- CRM now includes partial Hungarian translation. We hope to cover more of this translation in the following weeks and months.
+- CRM now includes partial Hungarian translation thanks to the great work of [Brainsum](https://brainsum.com). We hope to cover more of this translation in the following weeks and months.
 - Stats in the scenario builder have been refreshed and are now much more usable than before.
 
 You can check the full changelog [here](changelog/crm/0.38.md).
