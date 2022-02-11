@@ -4,7 +4,18 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-### 10-Feb-2022: New version of REMP tools is available (0.30.0)
+### 11-Feb-2022: New version of CRM is available (0.38)
+
+We pushed this release as late as possible. This might also be the last release before major update to v1.0. There are couple of important changes in this version:
+
+- We now officialy support and recommend Redis 6.2. If you're on the older version, you should be fine for now, but we won't be able to test Redis 3 as we were until now.
+- Users module now supports "preregistration" flow, which breaks couple of breaking changes. This flow is intended for systems with imported users, which you need to track for internal purposes, but their account shouldn't be activated yet.
+- CRM now includes partial Hungarian translation. We hope to cover more of this translation in the following weeks and months.
+- Stats in the scenario builder have been refreshed and are now much more usable than before.
+
+You can check the full changelog [here](changelog/crm/0.38.md).
+
+### 10-Feb-2022: New version of REMP tools is available (0.30)
 
 Almost three months passed since the latest version, yet this is mainly a maintenance release:
 
