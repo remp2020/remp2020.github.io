@@ -4,6 +4,10 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 22-Feb-2022: Hotfix release for REMP Beam (0.30.1)
+
+We've received couple of bugreports in Beam. One related to the conversion event aggregation (which could miss some events prior to conversion) and author/section segment calculation (which could take couple of hours). We recommend to upgrade to this release. ([changelog](https://github.com/remp2020/remp/releases/tag/0.30.1))
+
 ### 11-Feb-2022: New version of CRM is available (0.38)
 
 We pushed this release as late as possible. This might also be the last release before major update to v1.0. There are couple of important changes in this version:
