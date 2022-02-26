@@ -4,6 +4,10 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 26-Feb-2022: Hotfix release for REMP Tools (0.30.2)
+
+We've received a report for XSS vulnerability present on the SSO login error callback page. This error was present in the all previous versions of REMP tools and affected Beam, Campaign and SSO. Please update your REMP tools to prevent the vulnerability misuse. ([changelog](https://github.com/remp2020/remp/releases/tag/0.30.2))
+
 ### 22-Feb-2022: Hotfix release for REMP Beam (0.30.1)
 
 We've received couple of bugreports in Beam. One related to the conversion event aggregation (which could miss some events prior to conversion) and author/section segment calculation (which could take couple of hours). We recommend to upgrade to this release. ([changelog](https://github.com/remp2020/remp/releases/tag/0.30.1))
