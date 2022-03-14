@@ -4,6 +4,15 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 14-Mar-2022: New version of REMP tools is available (0.30)
+
+This release brings some useful features to Beam and Mailer:
+
+- Beam can now display non-article URLs instead of one "Landing page" entry. For this feature to work, your site needs to correctly set canonical URLs.
+- Mailer's WYSIWYG editor now automatically formats HTML. We also brought full screen mode for email editing.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/0.31.0).
+
 ### 26-Feb-2022: Hotfix release for REMP Tools (0.30.2)
 
 We've received a report for XSS vulnerability present on the SSO login error callback page. This error was present in the all previous versions of REMP tools and affected Beam, Campaign and SSO. Please update your REMP tools to prevent the vulnerability misuse. ([changelog](https://github.com/remp2020/remp/releases/tag/0.30.2))
