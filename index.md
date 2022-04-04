@@ -4,6 +4,12 @@
 
 The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 31-Mar-2022: Major CRM version release (1.0)
+
+After years of features and months of refactorings, we're happy to annouce that the CRM is stable enough for major version 1.0. Internally we updated the underlying framework and API library, to bring you better features in your modules.
+
+Full changelog is available [here](changelog/crm/1.0.md) and is split to the two sections: Nette 3 update-related section, and feature changes made since the 0.38. This update will be a bit harder due to the amount of breaking changes. Please follow the [migration guide](https://github.com/remp2020/crm-application-module/blob/master/MIGRATION.md) in order to successfully update your internal extensions.
+
 ### 14-Mar-2022: New version of REMP tools is available (0.30)
 
 This release brings some useful features to Beam and Mailer:
