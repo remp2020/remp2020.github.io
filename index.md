@@ -1,8 +1,19 @@
 ## REMP Technical news
 
-**Technical announcement:** We've been successfully using CRM with MySQL 8 in production and we believe it's stable for everyone to use. In order to use the latest features of MySQL 8, we will need to drop MySQL 5.7 support in the next months. 
+**Technical announcement:** 
 
-The preliminary end of support for MySQL 5.7 is scheduled for **April 2022**. Please schedule the upgrade of your database by this date in order to safely receive next versions of CRM. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 02-May-2022: New version of REMP tools is available (0.32)
+
+It's been a couple of weeks since the latest release and REMP tools bring couple of nice features:
+
+- Beam Tracker now supports Cloud Pub/sub that can be used as a queue for tracked events and possibly replace Kafka cluster.
+- The way how Mailer generates batch queues was rewritten to avoid table locking observed on the bigger instances.
+- Mailer adds List-Unsubscribe header, so the e-mail clients can display native unsubscribe links.
+- Mailer now supports localization for regular one-time emails. We'll be adding localization for jobs in the future.
+
+You can see the full changelog [here](https://github.com/remp2020/remp/releases/tag/0.32.1).
 
 ### 31-Mar-2022: Major CRM version release (1.0)
 
@@ -10,7 +21,7 @@ After years of features and months of refactorings, we're happy to annouce that 
 
 Full changelog is available [here](changelog/crm/1.0.md) and is split to the two sections: Nette 3 update-related section, and feature changes made since the 0.38. This update will be a bit harder due to the amount of breaking changes. Please follow the [migration guide](https://github.com/remp2020/crm-application-module/blob/master/MIGRATION.md) in order to successfully update your internal extensions.
 
-### 14-Mar-2022: New version of REMP tools is available (0.30)
+### 14-Mar-2022: New version of REMP tools is available (0.31)
 
 This release brings some useful features to Beam and Mailer:
 
