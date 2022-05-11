@@ -4,6 +4,12 @@
 
 Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 11-May-2022: Hotfix version of REMP tools (0.32.2)
+
+We've accidentally made a breaking change in one of our APIs which forced us to release this hotfix version. Since we were able to merge couple of other minor fixes/notices since the last version, this release contains breaking-change fix and also couple of minors.
+
+See the full changelog [here](https://github.com/remp2020/remp/releases/tag/0.32.2).
+
 ### 02-May-2022: New version of REMP tools is available (0.32)
 
 It's been a couple of weeks since the latest release and REMP tools bring couple of nice features:
