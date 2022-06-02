@@ -4,6 +4,12 @@
 
 Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 02-Jun-2022: CRM release (1.1)
+
+After more than a two months we bring new version of the CRM. This is more-or-less stability / minor features release. Make sure you go through the changelog to see if any of the features/changes interest you.
+
+Full changelog is available [here](changelog/crm/1.1.md).
+
 ### 26-May-2022: Hotfix version of REMP tools (0.32.4)
 
 The newest version of Latte templating engine started to trigger deprecation notices for one of the Mailer internal features. This version fixes the deprecation warning and filterLoader issue.
