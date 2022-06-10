@@ -4,13 +4,19 @@
 
 Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 10-Jun-2022: Hotfix version of REMP tools (0.32.6)
+
+Since today, Mailgun started to enforce additional checks on their API which broke non-batch sending of emails. If you encounter an error when sending the system emails through the Mailgun, please update immediatelly.
+
+The changelog and error description is [here](https://github.com/remp2020/remp/releases/tag/0.32.6), and [this is the commit](https://github.com/remp2020/remp/commit/dc1adc1f9752db5671f4e22c8bc5739b4ba515f7) explaining the issue.
+
 ### 02-Jun-2022: CRM release (1.1)
 
 After more than a two months we bring new version of the CRM. This is more-or-less stability / minor features release. Make sure you go through the changelog to see if any of the features/changes interest you.
 
 Full changelog is available [here](changelog/crm/1.1.md).
 
-### 26-May-2022: Hotfix version of REMP tools (0.32.4)
+### 26-May-2022: Hotfix version of REMP tools (0.32.5)
 
 The newest version of Latte templating engine started to trigger deprecation notices for one of the Mailer internal features. This version fixes the deprecation warning and filterLoader issue.
 
