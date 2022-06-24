@@ -4,6 +4,16 @@
 
 Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 24-Jun-2022: CRM release (1.2)
+
+This release is made primarily of one feature: Wallet pay support. Since this version, CRM contains new [wallet pay module](https://packagist.org/packages/remp/crm-wallet-pay-module), which brings support for Google pay and Apple pay payments through the gateway - mostly banks and big payment providers.
+
+Our implementation brings the wallet pay payments with support of Tatrabanka (Slovak bank), but the module is extensible for other providers as well.
+
+Since the feature is new, please consider it as a nearly-production-ready and use with a bit of caution.
+
+The full changelog is available [here](changelog/crm/1.2.md).
+
 ### 10-Jun-2022: Hotfix version of REMP tools (0.32.6)
 
 Since today, Mailgun started to enforce additional checks on their API which broke non-batch sending of emails. If you encounter an error when sending the system emails through the Mailgun, please update immediatelly.
