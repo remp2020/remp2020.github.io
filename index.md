@@ -8,9 +8,9 @@ Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's po
 
 This release is made primarily of one feature: Wallet pay support. Since this version, CRM contains new [wallet pay module](https://packagist.org/packages/remp/crm-wallet-pay-module), which brings support for Google pay and Apple pay payments through the gateway - mostly banks and big payment providers.
 
-Our implementation brings the wallet pay payments with support of Tatrabanka (Slovak bank), but the module is extensible for other providers as well.
+Our implementation brings the wallet pay payments with support of Tatrabanka (Slovak bank), but the module is extensible for other providers as well. Since the feature is new, please consider it as a nearly-production-ready and use with a bit of caution.
 
-Since the feature is new, please consider it as a nearly-production-ready and use with a bit of caution.
+This version also brings German translations, kudos to [alexmerz](https://github.com/alexmerz) for all the effort.
 
 The full changelog is available [here](changelog/crm/1.2.md).
 
