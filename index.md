@@ -4,6 +4,10 @@
 
 Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 13-Jul-2022: Hotfix release for CRM API module
+
+We've identified an issue with `Access-Control-Allow-Credentials` header, which was not included in the all requests if it was configured. This release fixes the issue. ([info](https://github.com/remp2020/crm-api-module/releases/tag/1.2.1))
+
 ### 24-Jun-2022: CRM release (1.2)
 
 This release is made primarily of one feature: Wallet pay support. Since this version, CRM contains new [wallet pay module](https://packagist.org/packages/remp/crm-wallet-pay-module), which brings support for Google pay and Apple pay payments through the gateway - mostly banks and big payment providers.
