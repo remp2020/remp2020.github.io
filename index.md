@@ -1,8 +1,20 @@
 ## REMP Technical news
 
-**Technical announcement:** 
+**Technical announcements:** 
 
-Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+08-Aug-2022: We're planning to drop support for PHP 7.4. The new minimum version of PHP is about to be 8.0. There'll be one more PHP 7.4 version for both REMP tools (today) and CRM (following days). After that, you won't be able to update without using PHP 8.0.
+31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 08-Aug-2022: New version of REMP tools (0.33)
+
+This release includes couple of usability fixes and minor features, that were requested for a longer time:
+
+- Mailer now finally has a delete features, so you can get rid old emails and templates which you don't need anymore.
+- We've fixed the mobile layout, all of the tools should now look a bit better.
+- Mailer has a new "allow list" feature that allows you to list patterns of emails eligible for receiving emails. This is primarily intended for staging and pre-production environments.
+- Campaign now by default shows banner preview for mobile widths and allows you to toggle between desktop and mobile.
+
+And more. You can check the full changelog [here](https://github.com/remp2020/remp/releases/tag/0.33.0).
 
 ### 13-Jul-2022: Hotfix release for CRM API module
 
