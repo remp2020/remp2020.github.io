@@ -3,7 +3,21 @@
 **Technical announcements:** 
 
 08-Aug-2022: We're planning to drop support for PHP 7.4. The new minimum version of PHP is about to be 8.0. There'll be one more PHP 7.4 version for both REMP tools (today) and CRM (following days). After that, you won't be able to update without using PHP 8.0.
+
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 06-Sep-2022: CRM release (2.0)
+
+Few months after the first major version comes CRM version 2.0, as we now follow semantic versioning more rigorously.
+The two biggest changes are upgrade from PHP 7.4 to version 8.0 and switch from Latte v2 to v3.   
+
+There are other major features added, such as:
+- Universal search in the administration.
+- Support for measurements - precalculated values which can be used in charts or any kind of period-based statistics.
+
+The full changelog is available [here](changelog/crm/2.0.md).
+
+[//]: # (Full changelog is available here and is split to the two sections: Nette 3 update-related section, and feature changes made since the 0.38. This update will be a bit harder due to the amount of breaking changes. Please follow the migration guide in order to successfully update your internal extensions.)
 
 ### 08-Aug-2022: New version of REMP tools (0.33)
 
