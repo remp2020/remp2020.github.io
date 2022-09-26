@@ -6,6 +6,14 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 06-Sep-2022: REMP tools major release (1.0)
+
+Finally, after few years of development, we have managed to release the first major stable release (1.0) of the REMP tools. 
+
+The main change is that PHP 8.0 is now the required version in all tools.
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/1.0.0).
+
 ### 06-Sep-2022: CRM release (2.0)
 
 Few months after the first major version comes CRM version 2.0, as we now follow semantic versioning more rigorously.
