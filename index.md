@@ -24,7 +24,7 @@ The full changelog is available [here](https://github.com/remp2020/remp/releases
 
 This version is the last PHP7 compatible release of the REMP tools. Changes:
 
-- The only breaking change is in whitelisting of domains for replacers (e.g. RTM replaced) in Mailer.  
+- The only breaking change is in whitelisting of domains for replacers (e.g. RTM replacer) in Mailer.  
 - Few minor fixes. 
 
 The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/0.34.0).
