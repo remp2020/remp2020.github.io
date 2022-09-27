@@ -22,7 +22,7 @@ The full changelog is available [here](https://github.com/remp2020/remp/releases
 
 ### 23-Sep-2022: New version of REMP tools (0.34)
 
-This version is the last PHP7 compatible release of the REMP tools. Changes:
+This version is the last PHP 7.4 compatible release of the REMP tools. Changes:
 
 - The only breaking change is in whitelisting of domains for replacers (e.g. RTM replacer) in Mailer.  
 - Few minor fixes. 
