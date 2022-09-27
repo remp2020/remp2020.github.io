@@ -6,13 +6,28 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-### 06-Sep-2022: REMP tools major release (1.0)
+### 26-Sep-2022: REMP tools major release (1.0)
 
 Finally, after few years of development, we have managed to release the first major stable release (1.0) of the REMP tools. 
 
 The main change is that PHP 8.0 is now the required version in all tools.
 
 The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/1.0.0).
+
+### 23-Sep-2022: Hotfix release of REMP tools (0.34.1)
+
+Hotfix includes issue fix that prevents saving template with invalid syntax in Mailer.
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/0.34.1).
+
+### 23-Sep-2022: New version of REMP tools (0.34)
+
+This version is the last PHP7 compatible release of the REMP tools. Changes:
+
+- The only breaking change is in whitelisting of domains for replacers (e.g. RTM replaced) in Mailer.  
+- Few minor fixes. 
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/0.34.0).
 
 ### 06-Sep-2022: CRM release (2.0)
 
