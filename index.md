@@ -2,9 +2,20 @@
 
 **Technical announcements:** 
 
-08-Aug-2022: We're planning to drop support for PHP 7.4. The new minimum version of PHP is about to be 8.0. There'll be one more PHP 7.4 version for both REMP tools (today) and CRM (following days). After that, you won't be able to update without using PHP 8.0.
+08-Aug-2022: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 25-Nov-2022: CRM release (2.1)
+
+After the major release couple of months ago, we have a new version of CRM with performance and stability improvements.
+
+- LazyWidgetManager is replacing old WidgetManager to handle widgets in CRM. Using "lazy widgets" should improve speed of your application, as only actually used widgets will now be initialized.
+- We've improved processes behind scenarios pausing and removing.
+- Also we've optimized evaluation of availability of upgrades.
+- We attempted to clean address fields, which were not always handled as nullable in the past.
+
+The full changelog is available [here](changelog/crm/2.1.md).
 
 ### 26-Sep-2022: REMP tools major release (1.0)
 
