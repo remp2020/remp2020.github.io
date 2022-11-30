@@ -6,6 +6,10 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 30-Nov-2022: CRM hotfix for subscriptions, segment and salesfunnel modules (2.1.1)
+
+- Fix bug preventing saving form when editing existing subscription type/segment/sales-funnel in administration.
+
 ### 25-Nov-2022: CRM release (2.1)
 
 After the major release couple of months ago, we have a new version of CRM with performance and stability improvements.
