@@ -6,7 +6,11 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-### 19-Dec-2022: CRM hotfix for Admin, Application, REMP Mailer and Salesfunnel modules
+### 05-Jan-2023: CRM hotfix for Users module
+
+The hotfix fixing the issues from 19-Dec-2022 should have included also release of Users module. We've just realized it was missing and it's available now for download. Please update your `remp/crm-users-module` package.
+
+### 19-Dec-2022: CRM hotfix for Admin, Application, REMP Mailer and SalesFunnel modules
 
 Release is addressing changes in the `nette/di` package since version `3.1`. If you updated your project, you could see some deprecations that were fixed in this release.
 
