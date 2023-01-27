@@ -6,6 +6,16 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 27-Jan-2023: REMP tools release (1.1)
+
+This took a while, but there are features to look for. This release brings support for PHP 8.1 and couple of notable features:
+
+- Campaign is now more focused on JS-banner use which is showing bigger potencial than we originally anticipated. We extracted JS editing from the inline input in the banner form to the separate modal window and added variable extraction for non-developers.
+- Mailer now allows you to add your own variables that can be injected into the every email. See `ServiceParamsProviderInterface` in the Mailer's readme file.
+- Mailer also need to make a bigger data migration in this release. The process is described in changelog. It's not blocking, but a bit time-intensive.
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/1.1.0).
+
 ### 27-Jan-2023: CRM release (2.2)
 
 Main feature of this release is support for PHP 8.1, which can now safely to deploy the CRM. Otherwise this is again mainly stability release.
