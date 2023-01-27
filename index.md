@@ -6,6 +6,12 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 27-Jan-2023: CRM release (2.2)
+
+Main feature of this release is support for PHP 8.1, which can now safely to deploy the CRM. Otherwise this is again mainly stability release.
+
+The full changelog is available [here](changelog/crm/2.2.md).
+
 ### 05-Jan-2023: CRM hotfix for Users and Subscriptions modules
 
 The hotfix fixing the issues from 19-Dec-2022 should have included also release of Users and Subscriptions modules. We've just realized it was missing and it's available now for download.
