@@ -6,6 +6,12 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 23-Feb-2023: REMP tools release (1.2)
+
+Today we also bring the new version of REMP tools. In Mailer we continue with internal updates (see info about `mail:migrate-user-subscriptions-and-variants`) and improve tracking of subscribe sources. In Campaign the most important feature is new set of settings for the campaign allowing you to configure what happens when users clicks/closes the banner (without using the Beam segments).
+
+The full changelog is avilable [here](https://github.com/remp2020/remp/releases/tag/1.2.0).
+
 ### 23-Feb-2023: CRM release (2.3)
 
 After some irregular updates in the recent months we will be trying to get back to more regular (monthly) release cycles. This CRM release might not look big, but for API-primary users of CRM it will be a huge performance improvement.
