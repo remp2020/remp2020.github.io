@@ -2,9 +2,19 @@
 
 **Technical announcements:** 
 
+24-Mar-2023: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
+
 08-Aug-2022: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 24-Mar-2023: REMP tools release (2.0)
+
+The main reason for major version is bump of the minimal version of the core dependencies. REMP tools now require PHP 8.1 and Node.js 18+ to release. The release otherwise contains performance improvements in Mailer and Beam, which will also continue in the following releases.
+
+Please note that in order to use this version, it is expected that both `mail:migrate-mail-logs-and-conversions` and `mail:migrate-user-subscriptions-and-variants` commands introduced in the previous versions were already executed. Update to this version only if you meet the criteria.
+
+The full changelog is avilable [here](https://github.com/remp2020/remp/releases/tag/2.0.0).
 
 ### 24-Mar-2023: CRM release (2.4)
 
@@ -15,6 +25,8 @@ The full changelog is avilable [here](changelog/crm/2.4.md).
 ### 23-Feb-2023: REMP tools release (1.2)
 
 Today we also bring the new version of REMP tools. In Mailer we continue with internal updates (see info about `mail:migrate-user-subscriptions-and-variants`) and improve tracking of subscribe sources. In Campaign the most important feature is new set of settings for the campaign allowing you to configure what happens when users clicks/closes the banner (without using the Beam segments).
+
+Please note that this version requires you to schedule a manual migration in order to update database internals without the distruption of the system. Read the CHANGELOG's section with `mail:migrate-user-subscriptions-and-variants` command execution.
 
 The full changelog is avilable [here](https://github.com/remp2020/remp/releases/tag/1.2.0).
 
@@ -31,6 +43,8 @@ This took a while, but there are features to look for. This release brings suppo
 - Campaign is now more focused on JS-banner use which is showing bigger potencial than we originally anticipated. We extracted JS editing from the inline input in the banner form to the separate modal window and added variable extraction for non-developers.
 - Mailer now allows you to add your own variables that can be injected into the every email. See `ServiceParamsProviderInterface` in the Mailer's readme file.
 - Mailer also need to make a bigger data migration in this release. The process is described in changelog. It's not blocking, but a bit time-intensive.
+
+Please note that this version requires you to schedule a manual migration in order to update database internals without the distruption of the system. Read the CHANGELOG's section with `mail:migrate-mail-logs-and-conversions` command execution.
 
 The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/1.1.0).
 
