@@ -8,19 +8,25 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 21-Apr-2023: CRM release (2.5)
+
+The latest version of CRM is out. This month it's mainly backend improvements and edge case fixes. There were some important internal changes in the `InvoiceModule` and the `SubscriptionModule` - see the Changelog.
+
+The full changelog is available [here](changelog/crm/2.5.md).
+
 ### 24-Mar-2023: REMP tools release (2.0)
 
 The main reason for major version is bump of the minimal version of the core dependencies. REMP tools now require PHP 8.1 and Node.js 18+ to release. The release otherwise contains performance improvements in Mailer and Beam, which will also continue in the following releases.
 
 Please note that in order to use this version, it is expected that both `mail:migrate-mail-logs-and-conversions` and `mail:migrate-user-subscriptions-and-variants` commands introduced in the previous versions were already executed. Update to this version only if you meet the criteria.
 
-The full changelog is avilable [here](https://github.com/remp2020/remp/releases/tag/2.0.0).
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/2.0.0).
 
 ### 24-Mar-2023: CRM release (2.4)
 
 This release brings new extension method for subscriptions asked by our users for some time - `ExtendLastExtension`. It adds new subscription after the last available subscription. It should replace the `ExtendActualExtension` as the default in the future. Also we found a logical issue with audit log which could keep track of anonymized records. To delete those records, please add `application:audit_logs_cleanup` to your scheduled tasks.
 
-The full changelog is avilable [here](changelog/crm/2.4.md).
+The full changelog is available [here](changelog/crm/2.4.md).
 
 ### 23-Feb-2023: REMP tools release (1.2)
 
@@ -28,7 +34,7 @@ Today we also bring the new version of REMP tools. In Mailer we continue with in
 
 Please note that this version requires you to schedule a manual migration in order to update database internals without the distruption of the system. Read the CHANGELOG's section with `mail:migrate-user-subscriptions-and-variants` command execution.
 
-The full changelog is avilable [here](https://github.com/remp2020/remp/releases/tag/1.2.0).
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/1.2.0).
 
 ### 23-Feb-2023: CRM release (2.3)
 
