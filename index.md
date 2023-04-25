@@ -8,6 +8,12 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 25-Apr-2023: REMP tools release (2.1)
+
+This release brings lots of optimizations to Beam, which started to feel a bit slower for bigger instances. Mailer brings better possibilities to manage newsletter variants (both in APIs and UI).
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/2.1.0).
+
 ### 21-Apr-2023: CRM release (2.5)
 
 The latest version of CRM is out. This month it's mainly backend improvements and edge case fixes. There were some important internal changes in the `InvoiceModule` and the `SubscriptionModule` - see the Changelog.
