@@ -8,6 +8,18 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 25-May-2023: REMP tools release (2.2)
+
+Release 2.2 contains only Mailer changes. Notable change are clicked links tracking and breaking change to how multi variant mail types are subscribed when default variant is not set and no variant is provided.
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/2.2.0).
+
+### 25-May-2023: CRM release (2.6)
+
+Release 2.6 brings few fixes (eg. `next_subscription_type_id` not being saved when creating subscription type in admin); audit log for `payment_items`; option to not prolong child company subscriptions when new parent subscription is purchased and pairing of one device token to multiple access tokens of same user. `RempMailerModule` contains few breaking changes.
+
+The full changelog is available [here](changelog/crm/2.6.md).
+
 ### 25-Apr-2023: REMP tools release (2.1)
 
 This release brings lots of optimizations to Beam, which started to feel a bit slower for bigger instances. Mailer brings better possibilities to manage newsletter variants (both in APIs and UI).
