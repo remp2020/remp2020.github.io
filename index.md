@@ -8,6 +8,12 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 02-June-2023: REMP tools patch release (2.2.1)
+
+Patch release 2.2.1 contains fixes for link tracking (new feature of Mailer introduced in 2.2).
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/2.2.1).
+
 ### 25-May-2023: REMP tools release (2.2)
 
 Release 2.2 contains only Mailer changes. Notable change are clicked links tracking and breaking change to how multi variant mail types are subscribed when default variant is not set and no variant is provided.
