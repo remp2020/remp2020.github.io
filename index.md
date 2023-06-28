@@ -8,6 +8,16 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 28-Jun-2023: REMP tools release (3.0)
+
+After couple of months of development we're proud to release v3.0. There's a lot going on under the hood and Beam, Campaign, and Sso are no ready to be extensible apps instead of static apps provided at the moment. We now deprecate use of `remp2020/remp` repository for deploys in favor of the newly created skeleton applications. We're finalizing Beam Skeleton and the other apps will continue soon.
+
+Please be aware that this version is a major release due to some breaking changes. Please update your Mailer skeleton application based on [these changes](https://github.com/remp2020/mailer-skeleton/commit/088cf5b660b8b4509295e01815451bfe9f751d03) and Yarn to v2.
+
+Apart from the under-the-hood changes, this release also brings performance improvements and some minor feature updates to Mailer.
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.0.0).
+
 ### 28-Jun-2023: CRM release (2.7)
 
 This release brings new extensions points for widgets and event handlers accross the application, and fixes some UI and usability issues of CRM admin.
