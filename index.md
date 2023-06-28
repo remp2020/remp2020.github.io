@@ -8,7 +8,13 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
-### 02-June-2023: REMP tools patch release (2.2.1)
+### 28-Jun-2023: CRM release (2.7)
+
+This release brings new extensions points for widgets and event handlers accross the application, and fixes some UI and usability issues of CRM admin.
+
+If you want to get more technical, the full changelog is available [here](changelog/crm/2.7.md).
+
+### 02-Jun-2023: REMP tools patch release (2.2.1)
 
 Patch release 2.2.1 contains fixes for link tracking (new feature of Mailer introduced in 2.2).
 
