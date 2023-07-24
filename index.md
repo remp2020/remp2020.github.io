@@ -8,6 +8,17 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 24-Jul-2023: CRM release (2.8)
+
+This month brings mainly usability and performance improvements within CRM:
+
+- Getting IDs of users in bigger segments should now be less memory-heavy.
+- It's now possible for admins to reactivate recurrent payments stopped by system.
+- Subsequent upgrades are now capable of upgrading any kind of subscription, even the ones with the different length.
+- And more smaller improvements.
+
+See the [changelog](changelog/crm/2.8.md). to see full list of changes for this version. 
+
 ### 28-Jun-2023: REMP tools release (3.0)
 
 After couple of months of development we're proud to release v3.0. There's a lot going on under the hood and Beam, Campaign, and Sso are no ready to be extensible apps instead of static apps provided at the moment. We now deprecate use of `remp2020/remp` repository for deploys in favor of the newly created skeleton applications. We're finalizing Beam Skeleton and the other apps will continue soon.
