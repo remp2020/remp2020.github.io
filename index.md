@@ -2,11 +2,31 @@
 
 **Technical announcements:** 
 
+28-Jun-2023: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
+
 24-Mar-2023: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
 
 08-Aug-2022: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 25-Jul-2023: REMP tools release (3.1)
+
+This version brings mainly stability improvements including couple of bugfixes.
+
+The most notable feature of the release is that Mailer now has the option to notify REMP CRM that user's mail subscription changed. This one is important for people using CRM's user data cache (in Redis), as people's mail subscription might be updated directly in Mailer and CRM wouldn't know about this change. To enable this feature, register the handler to these Hermes events:
+
+```neon
+services:
+	hermesWorker:
+		setup:
+			- add('user-subscribed', Remp\MailerModule\Hermes\NotifyCrmSubscribeUnsubscribeHandler())
+			- add('user-unsubscribed', Remp\MailerModule\Hermes\NotifyCrmSubscribeUnsubscribeHandler())
+			- add('user-subscribed-variant', Remp\MailerModule\Hermes\NotifyCrmSubscribeUnsubscribeHandler())
+			- add('user-unsubscribed-variant', Remp\MailerModule\Hermes\NotifyCrmSubscribeUnsubscribeHandler())
+```
+
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.1.0).
 
 ### 24-Jul-2023: CRM release (2.8)
 
