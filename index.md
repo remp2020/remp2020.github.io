@@ -10,6 +10,14 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 11-Aug-2023: REMP tools hotfix release (3.1.2)
+
+During testing of Beam Skeleton (now with the complete Docker Compose!) we've found out that there are background schedules missing and couple of other minor issues. If you started to work with Beam Skeleton, please update `remp/beam-module` to the latest version.
+
+We also recommend to check the updated version of Beam Skeleton, since it now provides all dependencies within Docker Compose (there's no need to install them manually) and also testing article with example how to include JS snippet into the page and which APIs are mandatory to call when you want to use Beam.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.1.2).
+
 ### 25-Jul-2023: REMP tools release (3.1)
 
 This version brings mainly stability improvements including couple of bugfixes.
