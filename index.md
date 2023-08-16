@@ -10,6 +10,12 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 16-Aug-2023: REMP tools hotfix release (3.1.3)
+
+Our friends from Petit Press reported some issues when using Yarn 3. This release fixes two issues that could occur if you used Yarn 3 to install dependencies instead of (tested) Yarn 2. If you encounter any issues, update to this version.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.1.3).
+
 ### 11-Aug-2023: REMP tools hotfix release (3.1.2)
 
 During testing of Beam Skeleton (now with the complete Docker Compose!) we've found out that there are background schedules missing and couple of other minor issues. If you started to work with Beam Skeleton, please update `remp/beam-module` to the latest version.
