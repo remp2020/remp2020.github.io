@@ -10,6 +10,23 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 24-Aug-2023: REMP tools release (3.2)
+
+New minor version brings mostly fixes to Beam _(related to Beam skeleton)_ and project changes (docker & docker compose changes and fix for yarn link not being able to link JS packages).
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.2.0).
+
+### 24-Aug-2023: CRM release (2.9)
+
+Important changes:
+
+- Added _locale_ parameter to snippets to support different translations within one snippet.
+- Removed restriction for administrators to generate invoice only if invoice address has company ID
+- Added support for calculating recurrent payment charge time for payments without subscription. (`charge_at` is calculated from `payment->paid_at` and `subscription_type->length`).
+- Added audit log for changes to ACL repositories.
+
+All changes are listed in [changelog for v2.9](changelog/crm/2.9.md).
+
 ### 16-Aug-2023: REMP tools hotfix release (3.1.3)
 
 Our friends from Petit Press reported some issues when using Yarn 3. This release fixes two issues that could occur if you used Yarn 3 to install dependencies instead of (tested) Yarn 2. If you encounter any issues, update to this version.
