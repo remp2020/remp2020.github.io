@@ -10,6 +10,25 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 03-Oct-2023: CRM release (2.10)
+
+This release brings performance and visual improvements. The notable are:
+
+- CRM admin now has dedicated detail (read-only) pages for subscription and payment.
+- New `LazyEventEmitter` allows us to defer initialization of event handlers and speed up all requests to CRM. You can either replace the registration manually, or use our Rector rule to do that automatically for you.
+  - In your main module classes, replace use of:
+    ```
+    public function registerEventHandlers(Emitter $emitter)
+    ```
+    with the replacement method:
+    ```
+    public function registerLazyEventHandlers(LazyEventEmitter $emitter)
+    ```
+  - Or use our newly added Rector rule: https://github.com/remp2020/crm-rector
+- API logger can now log responses if necessary (custom implementation needed).
+
+The full changelog is available [here](changelog/crm/2.10.md).
+
 ### 24-Aug-2023: REMP tools release (3.2)
 
 New minor version brings mostly fixes to Beam _(related to Beam skeleton)_ and project changes (docker & docker compose changes and fix for yarn link not being able to link JS packages).
