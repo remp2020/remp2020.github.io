@@ -10,6 +10,14 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 03-Oct-2023: REMP tools release (3.3)
+
+- Campaigns can now be targeted by user's language, not just his current geo-ip-based country.
+- Beam can now track custom URLs and referers if necessary (they're extracted automatically by default).
+  - Please update Tracker API before you use this feature.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.3.0).
+
 ### 03-Oct-2023: CRM release (2.10)
 
 This release brings performance and visual improvements. The notable are:
