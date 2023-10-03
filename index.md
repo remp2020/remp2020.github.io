@@ -24,7 +24,7 @@ This release brings performance and visual improvements. The notable are:
     ```
     public function registerLazyEventHandlers(LazyEventEmitter $emitter)
     ```
-  - Or use our newly added Rector rule: https://github.com/remp2020/crm-rector
+  - Or use our newly added Rector rule: [https://github.com/remp2020/crm-rector](https://github.com/remp2020/crm-rector#transform-to-lazy-event-listeners)
 - API logger can now log responses if necessary (custom implementation needed).
 
 The full changelog is available [here](changelog/crm/2.10.md).
