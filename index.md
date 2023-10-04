@@ -18,6 +18,8 @@
 
 Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.3.0).
 
+Due to the changes in underlying framework, we were force to quickly release a hotfix for Mailer with some possibly breaking changes. See the changelog [here](https://github.com/remp2020/mailer-module/releases/tag/3.3.1).
+
 ### 03-Oct-2023: CRM release (2.10)
 
 This release brings performance and visual improvements. The notable are:
