@@ -2,6 +2,8 @@
 
 **Technical announcements:** 
 
+21-Nov-2023: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
+
 28-Jun-2023: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
 24-Mar-2023: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
@@ -9,6 +11,17 @@
 08-Aug-2022: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+
+### 21-Nov-2023: CRM release (2.11)
+
+This release focuses on bringing some smaller features developed to one of our clients and made available open-source.
+
+- Users module fixes session-based bug that could appear when user switched accounts elsewhere (by having different `n_token`) and the first account was kept signed in in CRM.
+- Google Play Billing module now correctly handles grace periods (if they're enabled for subscription in Google Play Console).
+- Admin filter can now search against Google Play order ID / Apple original transaction ID.
+- Some improvements within the PrintModule, mainly possibility to differentiate which countries should only be included within the export.
+
+The full changelog is available [here](changelog/crm/2.11.md).
 
 ### 03-Oct-2023: REMP tools release (3.3)
 
