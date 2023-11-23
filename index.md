@@ -2,15 +2,21 @@
 
 **Technical announcements:** 
 
-21-Nov-2023: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
+**21-Nov-2023**: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
 
-28-Jun-2023: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
+**28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
-24-Mar-2023: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
+**24-Mar-2023**: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
 
-08-Aug-2022: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
+<details>
 
-31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+<summary>Archive:</summary>
+
+**08-Aug-2022**: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
+
+**31-Mar-2022**: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
+ 
+</details>
 
 ### 23-nov-2023: REMP tools release (3.4)
 
