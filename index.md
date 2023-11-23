@@ -12,6 +12,14 @@
 
 31-Mar-2022: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
 
+### 23-nov-2023: REMP tools release (3.4)
+
+- Thanks to contribution from [@pulzarraider](https://github.com/pulzarraider), Campaigns got a significant performance boost. We've also merged an experimental PhpRedis support, which can be enabled via `.env` file. We haven't tested it in production and it doesn't support Redis Sentinel, so use it at your own risk.
+- Mailer and Campaign received some minor improvements and bugfixes.
+- And we've also fixed a bug in SSO which caused occasional 404 after login redirects.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.4.0).
+
 ### 21-Nov-2023: CRM release (2.11)
 
 This release focuses on bringing some smaller features developed to one of our clients and made available open-source.
