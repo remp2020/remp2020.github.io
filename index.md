@@ -18,7 +18,7 @@
  
 </details>
 
-### 23-nov-2023: REMP tools release (3.4)
+### 23-Nov-2023: REMP tools release (3.4)
 
 - Thanks to contribution from [@pulzarraider](https://github.com/pulzarraider), Campaigns got a significant performance boost. We've also merged an experimental PhpRedis support, which can be enabled via `.env` file. We haven't tested it in production and it doesn't support Redis Sentinel, so use it at your own risk.
 - Mailer and Campaign received some minor improvements and bugfixes.
