@@ -10,7 +10,7 @@
 
 <details>
 
-<summary>Archive:</summary>
+<summary>Archive (1+ year old messages)</summary>
 
 **08-Aug-2022**: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
