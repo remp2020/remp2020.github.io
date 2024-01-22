@@ -2,21 +2,52 @@
 
 **Technical announcements:** 
 
+**22-Jan-2024**: Next major CRM release (4.0) planned for second half of 2024 will raise minimum MySQL version to 8.0.31 (due to features required by our modules) and will drop support of PHP 8.1. Please plan your upgrades accordingly.
+
+**22-Jan-2024**: CRM 3.0 dropped support for PHP 8.0. CRM now requires PHP 8.1 and newer.
+
 **21-Nov-2023**: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
-**24-Mar-2023**: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
-
 <details>
 
 <summary>Archive (1+ year old messages)</summary>
+
+**24-Mar-2023**: REMP 2.0 dropped support for PHP 8.0 and older versions of Node.js (v12, v14, v16). REMP now requires PHP 8.1 and Node.js 18+.
 
 **08-Aug-2022**: Since CRM 2.0 and REMP 1.0 we've dropped support for PHP 7.4. Minimum supported version from now is PHP 8.0.
 
 **31-Mar-2022**: Since CRM v1.0 and REMP tools v0.32 we've dropped support for MySQL 5.7. It's possible the CRM will work for you after this date, but you might encounter compatibility issues though.
  
 </details>
+
+### 22-Jan-2024: CRM release (3.0)
+
+After two months of updates and refactorings, we're finally able to release version 3.0 of REMP CRM. 
+
+This version brings lots of internal updates and breaking changes - if you are a developer extending CRM with your own modules, please pay attention to everything marked as **BREAKING** and **IMPORTANT** within the changelog. Minimum supported version of PHP is now 8.1 and we plan to raise minimum version of MySQL in the next major release (4.0). The most cumbersome changeset of this release - PSR4 refactoring - is covered by Rector rules and the fix can be automated on your side.
+
+Feature-wise this is a standard update release, with couple of notable ones:
+
+- Google Play Billing payment gateway is now marked as recurrent. In order to generate past records, please run `google:create-missing-recurrent`.
+- Google Play Billing now correctly handles "void purchase" scenario.
+- Thanks to VAT change in Czechia, we were able to catch couple of edge cases related to the change.
+- You can now suppress _subscription end_ trigger in scenarios per each subscription separately. And we fixed some bugs in scenario conditions too.
+
+Updates in the Skeleton app (https://github.com/remp2020/crm-skeleton/):
+
+- In the base CRM skeleton app, we updated the PHP Docker image to PHP 8.2 - that is the version we currently use in production and recommend to use.
+- In `app/bootstrap.php` change application initialization to `$application = new Crm\ApplicationModule\Application\Core(dirname(__DIR__));`. _(namespace change)_
+- In `bin/command.php` change application initialization to `$application = new Crm\ApplicationModule\Application\Core();`. _(namespace change)_
+  - This can be covered by Rector, but you might possibly want to change it manually sooner.
+- In `app/config.neon` change definition of `ConfigExtension` to `local_configs: Crm\ApplicationModule\Config\ConfigExtension`.
+  - This can be covered by Rector, but you might possibly want to change it manually sooner.
+- In `app/config.local.neon`, if you kept the original set of populators, replace `Populator` with `Populators` within their namespaces.
+
+You can see all of those changes commited here: https://github.com/remp2020/crm-skeleton/commit/4d115a560c0b3d6160aff8158bc38ab3a5a0d372
+
+The full changelog is available [here](changelog/crm/3.0.md).
 
 ### 23-Nov-2023: REMP tools release (3.4)
 
