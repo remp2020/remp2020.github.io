@@ -10,6 +10,19 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 23-Jan-2024: REMP tools release (3.5)
+
+This time it's a very minor update, since most of our efforts were directed to the CRM.
+
+- Mailer updates some major dependencies, please check the changelog if you extend it.
+- Mailer fixes memory issue on the job detail.
+- Campaign fixes a bug that caused segments to be removed from the original campaign if it was copied.
+- Fixed issus with HTTP 404 errors during login process in some scenarios.
+
+We've also updated our skeleton apps (Mailer, Beam) to use PHP 8.2 by default. That's the version of PHP we recommend to use from now on.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.5.0).
+
 ### 22-Jan-2024: CRM release (3.0)
 
 After two months of updates and refactorings, we're finally able to release version 3.0 of REMP CRM. 
