@@ -10,6 +10,18 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 13-Mar-2024: CRM release (3.1)
+
+After 6 weeks, we have new CRM release with some notable new features:
+
+- You can now nest segments in other segments (both in queries and UI editor). The query editor also received syntax highlighting.
+- CRM now adds more complex refund process, which will be extended in the future. Refunds now direct you to the separate form and stop subscription and recurrent payment immediately.
+- Any updated `ActiveRow` object can now provided its state before the update thanks to integrating `OriginalAwareInterface`.
+- Global admin search can search by invoice number.
+- Subscription extension can now use address as a parameter to determine when the new subscription should start.
+
+We advise to review the full changelog available [here](changelog/crm/3.1.md).
+
 ### 23-Jan-2024: REMP tools release (3.5)
 
 This time it's a very minor update, since most of our efforts were directed to the CRM.
