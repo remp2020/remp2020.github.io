@@ -10,6 +10,17 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 24-Apr-2024: REMP tools release (3.6)
+
+This release brings interesting feature in Campaign and some minor updates in other tools.
+
+- Campaigns can now targeted based on the session referal. That means that if your visit comes from the Facebook, you now have an option to target the whole visit instead of just the first pageview.
+- Mailer and Beam now refresh their configs on-the-fly, it's not necessary to restart workers after the config change anymore.
+- Mailer now supports One-Click unsubscribe according to RFC8058, see README for more information.
+- Beam could be slow when displaying data tables for systems with many authors and tags. (Thanks **SME.sk** for debugging this)
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.6.0).
+
 ### 13-Mar-2024: CRM release (3.1)
 
 After 6 weeks, we have new CRM release with some notable new features:
