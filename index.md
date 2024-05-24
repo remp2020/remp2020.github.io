@@ -2,6 +2,8 @@
 
 **Technical announcements:** 
 
+**24-May-2024**: This summer Elasticsearch will drop support for v7. We are planning to move to Elasticsearch 8. If you use Beam, plan the Elasticsearch update to end of the summer / beginning of the fall 2024. Otherwise you might not be able to update to the latest version.
+
 **22-Jan-2024**: Next major CRM release (4.0) planned for second half of 2024 will raise minimum MySQL version to 8.0.31 (due to features required by our modules) and will drop support of PHP 8.1. Please plan your upgrades accordingly.
 
 **22-Jan-2024**: CRM 3.0 dropped support for PHP 8.0. CRM now requires PHP 8.1 and newer.
@@ -9,6 +11,17 @@
 **21-Nov-2023**: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
+
+### 24-May-2024: CRM release (3.2)
+
+After 2 months, CRM brings some notable changes that took us some time to deliver.
+
+- Scenarios are now capable of validate the connections. From now on, you won't be able to save the scenario if you system detects that trigger doesn't provide parameters required by some of the conditions down the road.
+- Because of this, we added new `TriggerManager` to scenarios. If you implement your own triggers, please see the [changelog](https://github.com/remp2020/crm-scenarios-module/releases/tag/3.2.0).
+- We also managed to upgrade processing of Apple's server to server notifications. If you use AppleAppstoreModule, please see the new configuration options that are required for the module to work correctly. It's also recommended to change notification versions from v1 to v2 in the Apple developer account settings for the app and point it to the `/api/v2/apple-appstore/webhook` endpoint.
+- This version also brings some security and performance improvements.
+
+We advise to review the full changelog available [here](changelog/crm/3.2.md).
 
 ### 24-Apr-2024: REMP tools release (3.6)
 
