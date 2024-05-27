@@ -12,6 +12,18 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 27-May-2024: REMP tools release (3.7)
+
+No new features in this release, but couple of notable technical improvements:
+
+- If you use non-zero Redis database, please read the README as one of the fixes in the `RedisClientTrait` are important for you.
+- Mailer received `application:cleanup` command that removes obsolete data from the database. Please add it to your scheduled tasks to be run at least once a day.
+- Mailer is now able to reload configuration on-the-fly. Up until now, workers needed to be restarted if the config changed. That's not necessary anymore.
+- There's a new segment in Mailer called "everyone", that should replace necessity of calling CRM to get the list of all users if you needed it.
+- Tracker's and Segment's underlying library (Goa) was updated to the latest version. There are no visible changes.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.7.1).
+
 ### 24-May-2024: CRM release (3.2)
 
 After 2 months, CRM brings some notable changes that took us some time to deliver.
