@@ -12,6 +12,17 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 12-Jul-2024: REMP tools release (3.8)
+
+In this version we bring improvements to the Mailer UI, Beam dashboard and add support for Elasticsearch 8 into the Segments and Tracker APIs. Eventhough the update is not mandatory for this release, we highly recommend to do it so you are future-proof. We remind that the Elasticsearch 8 update is imminent and should happen by the end of the summer / beginning of the fall. 
+
+- Mailer now supports full screen preview for text emails and the UI has been polished.
+- Manipulation with Mailer's newsletters have also improved.
+- Chart library in Mailer was updated and the charts have now slightly improved look.
+- Beam dashboard now displays percentage of mobile traffic next to the active concurrents.
+
+Full changelog is available [here](https://github.com/remp2020/remp/releases/tag/3.8.0).
+
 ### 12-Jul-2024: CRM release (3.3)
 
 This version brins changes, that will allow us to support One Stop Shop scheme in the EU. In fact, we already support this internally and test it on our installations. If nothing special emerges, we expect to open-source the full support in the following releases. You might see stuff related to One Stop Shop in the changelog, none of it is actually live yet and we recommend not to enable it.
