@@ -12,6 +12,21 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 12-Jul-2024: CRM release (3.3)
+
+This version brins changes, that will allow us to support One Stop Shop scheme in the EU. In fact, we already support this internally and test it on our installations. If nothing special emerges, we expect to open-source the full support in the following releases. You might see stuff related to One Stop Shop in the changelog, none of it is actually live yet and we recommend not to enable it.
+
+Apart from the One Stop Shop changes, this version includes:
+
+- Automatic reload of configs for long-running jobs/daemons.
+- Major refactor of recurrent payments charging, which allows us to add extra payment items to the recurrent payments.
+  - For example, you can now add additional postal fee items to your subscriptions based on the user's country, and this fee will be included also in the recurrent charges. This was not possible so far.
+- Sales funnels now support system translations via `|trans` filter.
+- You can now use Twig in `header_block` and `sales_funnel_header_block` config options, and for `head_script` in each of the sales funnels.
+- We also added extra trait `SalesFunnelTwigSnippetLoaderTrait` that helps you loading and providing snippets into your funnels.
+
+The rest is mainly improvements and minor fixes. You can check the full changelog [here](changelog/crm/3.3.md).
+
 ### 27-May-2024: REMP tools release (3.7)
 
 No new features in this release, but couple of notable technical improvements:
