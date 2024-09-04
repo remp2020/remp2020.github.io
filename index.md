@@ -2,6 +2,8 @@
 
 **Technical announcements:** 
 
+**04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
+
 **24-May-2024**: This summer Elasticsearch will drop support for v7. We are planning to move to Elasticsearch 8. If you use Beam, plan the Elasticsearch update to end of the summer / beginning of the fall 2024. Otherwise you might not be able to update to the latest version.
 
 **22-Jan-2024**: Next major CRM release (4.0) planned for second half of 2024 will raise minimum MySQL version to 8.0.31 (due to features required by our modules) and will drop support of PHP 8.1. Please plan your upgrades accordingly.
@@ -11,6 +13,14 @@
 **21-Nov-2023**: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
+
+### 04-Sep-2024: REMP tools release (3.9)
+
+We managed to successfully upgrade to Elasticsearch 8 during the summer months. The upgrade was farely easy and we only needed to follow official [upgrade guide](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elasticsearch.html). To use the latest version of Elasticsearch, please upgrade Tracker API, Segments API, and [Telegraf](https://github.com/remp2020/telegraf/releases/tag/v1.31.0).
+
+Thanks to our friends from Fatchilli, we also made changes necessary to split Campaign to the separate skeleton app in the near future. The Campaign is already extracted into its own [module](https://packagist.org/packages/remp/campaign-module) and we now wait for the skeleton app to be ready. Becasue of that, there are some important changes to follow/check before upgrading in the [Campaign's changelog](https://github.com/remp2020/campaign-module/releases/tag/3.9.0), please make sure you read them.
+
+The full list of changes is available [here](https://github.com/remp2020/remp/releases/tag/3.9.0).
 
 ### 12-Jul-2024: REMP tools release (3.8)
 
