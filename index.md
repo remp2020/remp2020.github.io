@@ -14,6 +14,23 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 20-Sep-2024: CRM release (3.4)
+
+It took more than two months to release the new version of CRM, but we hope it was worth it. We're working on the support for One Stop Shop mode in EU, which allows you to charge your users VAT rate dependning on their country. At the moment it's not completely finished yet, since we still need to work on foreign B2B sales. The full support with the documentation will be available next month.
+
+These changes forced us to do some major refactorings and they caused some breaking changes. Please go through the changelog (mainly the `PaymentsModule`) and verify that these changes don't break something for you.
+
+The noticable features of this release are:
+
+- You can now transfer subscriptions (together with their payments and recurring payments) between two accounts.
+- Localizable countries lists. You can now configure the CRM to display lists of countries in user's language. It's a opt-in feature, it might change in the future. You can change the setting in the CRM admin.
+- Family (company) module now correctly handles recurring charges of master payments.
+- VAT rates are now decimal.
+- There is new trigger in scenarios which generates events before a recurrent payment's card expiration.
+- Fixed the slower performance of Login API introduced in 3.0.
+
+You can see the full changelog [here](changelog/crm/3.4.md).
+
 ### 04-Sep-2024: REMP tools release (3.9)
 
 We managed to successfully upgrade to Elasticsearch 8 during the summer months. The upgrade was farely easy and we only needed to follow official [upgrade guide](https://www.elastic.co/guide/en/elastic-stack/8.14/upgrading-elasticsearch.html). To use the latest version of Elasticsearch, please upgrade Tracker API, Segments API, and [Telegraf](https://github.com/remp2020/telegraf/releases/tag/v1.31.0).
