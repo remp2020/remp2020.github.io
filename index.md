@@ -14,6 +14,12 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 25-Oct-2024: REMP release (3.5)
+
+Today we're also releasing new version of REMP. In Beam, we focused on some compatibility issues with Elasticsearch 8. Campaign got first batch of accessibility improvements, more will came in the following release. And Mailer received couple of bugfixes and improvements as well, see the changelog.
+
+The full list of changes is available [here](https://github.com/remp2020/remp/releases/tag/3.10.0).
+
 ### 25-Oct-2024: CRM release (3.5)
 
 We have new CRM release ready. The One Stop Shop mode is fairly tested and stable at this moment, but we're still missing one important feature - B2B reverse charge mode which would allow 0% VAT purchase for the businesses within EU. We decided to hold the documentation for now and we'll release everything together. If you would like to use OSS anyway, let us know and we'll guide you forward.
