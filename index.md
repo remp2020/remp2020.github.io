@@ -14,6 +14,17 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 25-Oct-2024: CRM release (3.5)
+
+We have new CRM release ready. The One Stop Shop mode is fairly tested and stable at this moment, but we're still missing one important feature - B2B reverse charge mode which would allow 0% VAT purchase for the businesses within EU. We decided to hold the documentation for now and we'll release everything together. If you would like to use OSS anyway, let us know and we'll guide you forward.
+
+This version brings more or less stability changes:
+
+- Internal changes allowing us management of payment methods in the future - we're moving CIDs from the recurrent payments to their own table. Because of this migration, we'll need you to run `payments:migrate_payment_methods` command after the release to make sure everything was migrated correctly.
+- Bugfixes and improvements for specific system events, we recommend you to review the changelog.
+
+You can see the full changelog [here](changelog/crm/3.5.md).
+
 ### 20-Sep-2024: CRM release (3.4)
 
 It took more than two months to release the new version of CRM, but we hope it was worth it. We're working on the support for One Stop Shop mode in EU, which allows you to charge your users VAT rate dependning on their country. At the moment it's not completely finished yet, since we still need to work on foreign B2B sales. The full support with the documentation will be available next month.
