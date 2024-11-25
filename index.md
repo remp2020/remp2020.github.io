@@ -14,7 +14,7 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
-### 25-Oct-2024: REMP release (3.5)
+### 25-Oct-2024: REMP release (3.10)
 
 Today we're also releasing new version of REMP. In Beam, we focused on some compatibility issues with Elasticsearch 8. Campaign got first batch of accessibility improvements, more will came in the following release. And Mailer received couple of bugfixes and improvements as well, see the changelog.
 
