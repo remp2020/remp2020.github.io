@@ -14,6 +14,19 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 28-Nov-2024: CRM release (3.6)
+
+This version is primarly finance-featured.
+
+- One Stop Shop (OSS) mode is now generally available. Please read about [VAT in EU](https://github.com/remp2020/crm-payments-module/blob/master/README.md#one-stop-shop) and about [how to get VAT rates into the system](https://github.com/remp2020/crm-payments-module/blob/master/README.md#european-union-vat). The mode is disabled by default. Enable it only after consulting with your accounting department and agreeing on the launch date, and making sure your sales funnels can provide payment country to backend. Once enabled, each payment **must** have the country assigned.
+- System now also supports multiple VAT modes (B2B, B2C, B2B reverse charge) and Invoices module implements the default behavior. If we recognize that your CRM is in the EU and you enabled VAT rates update from the previous step, CRM will deduct VAT for B2B purchase within EU where applicable. This is enabled by default, but if you need more control, you can implement your own `VatModeDataProviderInterface` ([docs](https://github.com/remp2020/crm-payments-module?tab=readme-ov-file#vat-modes)).
+- On backend we made some notable improvements with the transactions. CRM repositories now provide application-level transactions, which we heavilly recommend to use. They make sure, that you never start the transaction twice within your request, and also postpone Hermes event emitting until the transaction is commited. If the transaction is rollbacked, Hermes events are thrown away.
+- Due to security reason, we needed to upgrade `twig` templating system used in the sales funnels to v3. Please see the changelog and review the deprecations from the v2.
+
+Please be aware that this is the last 3.* version. Next version will (as announced earlier) drop support for PHP 8.1, raise minimum version for MySQL to 8.0.31, and bring some possibly breaking changes.
+
+You can see the full changelog [here](changelog/crm/3.6.md).
+
 ### 25-Oct-2024: REMP release (3.10)
 
 Today we're also releasing new version of REMP. In Beam, we focused on some compatibility issues with Elasticsearch 8. Campaign got first batch of accessibility improvements, more will came in the following release. And Mailer received couple of bugfixes and improvements as well, see the changelog.
