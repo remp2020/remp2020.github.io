@@ -14,6 +14,16 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 04-Feb-2025: CRM release (3.7)
+
+Eventhough we declared that the 3.6 would be the last 3.*, we needed to make one more release as the work on v4 got delayed. Here's what's new:
+
+- We completely changed underlying JS library for scenarios, allowing us to make easier improvements for UI in the future.
+- You can now create gift subscriptions in CRM Admin (if you use gifts-module).
+- Fixed things related to changing payment country and VAT in CRM Admin.
+
+As usual, there are smaller changes and fixes, and some possibly breaking changes for those who extend the CRM. You can see the full changelog [here](changelog/crm/3.7.md).
+
 ### 28-Nov-2024: CRM release (3.6)
 
 This version is primarly finance-featured.
