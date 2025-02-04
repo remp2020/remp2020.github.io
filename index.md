@@ -14,6 +14,15 @@
 
 **28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
 
+### 04-Feb-2025: REMP release (3.11)
+
+Similar to CRM, we are making one last v3 REMP release before we move on to v4 with some breaking changes. This version includes:
+
+- Accessibility improvements of Campaign banners (contrasts, screen reader labels).
+- Ability to extend Campaign's color schemes to include your own.
+
+Release contains some additional fixes and improvements, the full list of changes is available [here](https://github.com/remp2020/remp/releases/tag/3.11.0).
+
 ### 04-Feb-2025: CRM release (3.7)
 
 Eventhough we declared that the 3.6 would be the last 3.*, we needed to make one more release as the work on v4 got delayed. Here's what's new:
