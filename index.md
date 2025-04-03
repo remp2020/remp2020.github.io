@@ -2,17 +2,21 @@
 
 **Technical announcements:** 
 
+**03-Apr-2025**: CRM 4.0 dropped support for PHP 8.1. CRM now requires PHP 8.2 and newer. We recommend using PHP 8.3 in production environment. Minimum MySQL version (due to features we might require in some of our modules) is 8.0.31.
+
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
-**24-May-2024**: This summer Elasticsearch will drop support for v7. We are planning to move to Elasticsearch 8. If you use Beam, plan the Elasticsearch update to end of the summer / beginning of the fall 2024. Otherwise you might not be able to update to the latest version.
+### 03-Apr-2025: CRM release (4.0)
 
-**22-Jan-2024**: Next major CRM release (4.0) planned for second half of 2024 will raise minimum MySQL version to 8.0.31 (due to features required by our modules) and will drop support of PHP 8.1. Please plan your upgrades accordingly.
+It took us couple of more months to finish, but CRM 4.0 is here.
 
-**22-Jan-2024**: CRM 3.0 dropped support for PHP 8.0. CRM now requires PHP 8.1 and newer.
+- We updated majority of our dependencies.
+- Minimum supported PHP version is now 8.2, recommended for production is 8.3.
+- There are lot of breaking changes (due to dependencies update) that you need to review before upgrading. All of them are summarized in the Changelog. We tried to add new Rector rules to ease the upgrade, review the latest version of [CRM rector module](https://github.com/remp2020/crm-rector).
+- We deprecated iframe-based use of sales funnels. We highly recommend to use direct funnels. See [README](https://github.com/remp2020/crm-salesfunnel-module#iframe-deprecation-in-sales-funnels).
+- We started implementation on full refunds. System now allows you to implement `RefundableInterface` in your payment gateways which allows direct refunds from the system. At the moment, none of the open-sourced gateways implement this, internally we use it for our Trustpay integration.
 
-**21-Nov-2023**: The latest version of CRM (2.11) is the last one to support PHP 8.0. Future versions of CRM will require PHP 8.1 at minimum.
-
-**28-Jun-2023**: REMP 3.0 dropped support for Yarn 1.x. REMP now requires Yarn 2.x (or newer).
+There's more, mainly bugfixes that we found during the upgrade. As always, but this time even more, please review the full list of changes available [here](changelog/crm/4.0.md).
 
 ### 04-Feb-2025: REMP release (3.11)
 
