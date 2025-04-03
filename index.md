@@ -16,7 +16,7 @@ It took us couple of more months to finish, but CRM 4.0 is here.
 - We deprecated iframe-based use of sales funnels. We highly recommend to use direct funnels. See [README](https://github.com/remp2020/crm-salesfunnel-module#iframe-deprecation-in-sales-funnels).
 - We started implementation on full refunds. System now allows you to implement `RefundableInterface` in your payment gateways which allows direct refunds from the system. At the moment, none of the open-sourced gateways implement this, internally we use it for our Trustpay integration.
 
-There's more, mainly bugfixes that we found during the upgrade. As always, but this time even more, please review the full list of changes available [here](changelog/crm/4.0.md).
+There's more, mainly bugfixes that we found during the upgrade. As always, but this time even more, please review the full list of changes available [here](changelog/crm/4.0.md). We've also made some [changes in the Skeleton app](https://github.com/remp2020/crm-skeleton/commit/a69eaccb20cb255738de6025b2d42dc6ebbda4a7), you might want to port them to your projects as well.
 
 ### 04-Feb-2025: REMP release (3.11)
 
