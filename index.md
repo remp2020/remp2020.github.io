@@ -2,9 +2,25 @@
 
 **Technical announcements:** 
 
+**29-Apr-2025**: REMP 4.0 dropped support for PHP 8.1 and requires PHP 8.2 or newer. We recommend using PHP 8.3 in production environment.
+
 **03-Apr-2025**: CRM 4.0 dropped support for PHP 8.1. CRM now requires PHP 8.2 and newer. We recommend using PHP 8.3 in production environment. Minimum MySQL version (due to features we might require in some of our modules) is 8.0.31.
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
+
+### 29-Apr-2025: REMP release (4.0)
+
+Finally, we are releasing the 4.0 of our REMP tools. This release brings lots of internal breaking changes, so if you extended any of the modules, please read the Changelog thoroughly. 
+
+- The minimum supported version now is PHP 8.2 and recommended version is 8.3.
+- We've upgraded underlying libraries and the Laravel framework to their latest version. We had significant technical debt here which is now gone.
+- Laravel made some changes, including slimming the skeleton application. We are doing this as well, but you don't have to do it immediately:
+  - The minimum upgrade path for you is displayed in [this commit](https://github.com/remp2020/beam-skeleton/commit/85a24b77fe2898600421f4e1d31f739ad1982054).
+  - To get to the latest skeleton version, please apply changes from [this commit](https://github.com/remp2020/beam-skeleton/commit/fc215048d307eb041908f516857ce32bb0609287).
+  - When removing middlewares, please make sure you apply any of your internal changes to the `bootstrap/app.php` file (the `->withMiddleware()`) call.
+- We've updated Elasticsearch and Telegraf docker images to use the newer versions - Elasticsearch 8.6.1 and Telegraf 1.31.
+
+Apart from that, there are minor improvements and bugfixes across all modules, feel free to go through the Changelog and review them [here](changelog/crm/4.0.md)..
 
 ### 03-Apr-2025: CRM release (4.0)
 
