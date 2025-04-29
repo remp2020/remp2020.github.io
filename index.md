@@ -20,7 +20,7 @@ Finally, we are releasing the 4.0 of our REMP tools. This release brings lots of
   - When removing middlewares, please make sure you apply any of your internal changes to the `bootstrap/app.php` file (the `->withMiddleware()`) call.
 - We've updated Elasticsearch and Telegraf docker images to use the newer versions - Elasticsearch 8.6.1 and Telegraf 1.31.
 
-Apart from that, there are minor improvements and bugfixes across all modules, feel free to go through the Changelog and review them [here](changelog/crm/4.0.md)..
+Apart from that, there are minor improvements and bugfixes across all modules, feel free to go through the Changelog and review them [here](https://github.com/remp2020/remp/releases/tag/4.0.0).
 
 ### 03-Apr-2025: CRM release (4.0)
 
