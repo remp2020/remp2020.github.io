@@ -8,6 +8,12 @@
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
+### 25-May-2025: CRM release (4.1)
+
+This release contains mainly quality of life improvements and fixes, that benefits mainly the installations extending the CRM.
+
+You can see the full changelog [here](changelog/crm/4.1.md).
+
 ### 29-Apr-2025: REMP release (4.0)
 
 Finally, we are releasing the 4.0 of our REMP tools. This release brings lots of internal breaking changes, so if you extended any of the modules, please read the Changelog thoroughly. 
