@@ -8,6 +8,30 @@
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
+### 27-Jun-2025: REMP release (4.1)
+
+This is a pretty important release, two big features come in this version:
+
+- Campaign now finally has its own skeleton application. We strongly recommend to migrate from monorepo to the skeleton (https://github.com/remp2020/campaign-skeleton).
+- Beam now supports impression tracking - it can store elements that your users saw on the website to Elasticsearch. The feature is disabled by default and experimental, but it can be enabled with JS config (see https://github.com/remp2020/remp/blob/master/Beam/README.md). More documentation will come in the following releases.
+  - For now it only stores the data and it's up to you to evaluate them if you ever need to.
+- Other fixes and improvements.
+
+In order for this version to function correctly, you need to upgrade your Telegraf installation to the v1.31.1.
+
+The full list of changes is available [here](https://github.com/remp2020/remp/releases/tag/4.1.0).
+
+### 27-Jun-2025: CRM release (4.2)
+
+In this version we bring nicer object history for CRM admin users. You no longer need to go to the audit log page, but CRM provides a history log widget and also a way how to attach to the existing implementations of widgets (for payments, subscriptions, and shop orders and products. Visit their detail pages to see the new feature.
+
+- CRM now allows to store cardholder name for payment cards if your gateway provides such information.
+- Products module (eshop) now allows to specify global postal fee conditions if you ever need to make some postal fee available only conditionally.
+- Scenarios now validate if you filled the condition elements correctly.
+- And other fixes and improvements.
+
+You can see the full changelog [here](changelog/crm/4.2.md).
+
 ### 25-May-2025: CRM release (4.1)
 
 This release contains mainly quality of life improvements and fixes, that benefits mainly the installations extending the CRM.
