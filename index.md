@@ -8,6 +8,18 @@
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
+### 22-Sep-2025: CRM release (4.3)
+
+We hoped to bring some user-facing functional features in this release, but they weren't ready yet. It's not featureless one though:
+
+- Search improvements in users admin.
+- Our friends from Fatchilli added support for instant Paypal refunds.
+- Content access can now be flagged not to be visible on frontend.
+- Invoice modules now uses Flysystem for the batch invoice generation.
+- Lots of fixes that we stumbled upon.
+
+You can see the full changelog [here](changelog/crm/4.3.md).
+
 ### 27-Jun-2025: REMP release (4.1)
 
 This is a pretty important release, two big features come in this version:
