@@ -27,6 +27,8 @@ This is a pretty important release, two big features come in this version:
 - Campaign now finally has its own skeleton application. We strongly recommend to migrate from monorepo to the skeleton (https://github.com/remp2020/campaign-skeleton).
 - Beam now supports impression tracking - it can store elements that your users saw on the website to Elasticsearch. The feature is disabled by default and experimental, but it can be enabled with JS config (see https://github.com/remp2020/remp/blob/master/Beam/README.md). More documentation will come in the following releases.
   - For now it only stores the data and it's up to you to evaluate them if you ever need to.
+- Response of `showtime.php` was optimized and only required snippets are being sent to the frontend.
+  - **IMPORTANT**: Please run `php artisan campaigns:refresh-cache` command after the release to refresh Redis cache keys.
 - Other fixes and improvements.
 
 In order for this version to function correctly, you need to upgrade your Telegraf installation to the v1.31.1.
