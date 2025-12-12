@@ -8,6 +8,24 @@
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
+### 12-Dec-2025: REMP release (4.3)
+
+This release brings only handful of improvements and fixes.
+
+**IMPORTANT** update notes:
+
+- In Mailer, please make these [changes](https://github.com/remp2020/mailer-skeleton/commit/3352e1469151cf806121fd533d5dc7f48bafa8ff) in your skeleton application:
+  - In `app/Bootstrap.php` replace use of `Nette\Configurator` with `ette\Bootstrap\Configurator`.
+  - In `package.json`, upgrade `vue-loader` to `^v17.0, ugprade `vue` to `v3.5` and remove `vue-template-compiler`. Without these changes, the JS build would be failing.
+
+Now regarding the notable features:
+
+- Beam JS tracking now adds support for BFcache (out of the box), and drops tracking of unnecessary parameters.
+- SSO can now list previously registered users and you can now remove/invalidate their access from within UI.
+- Mailer is internally upgraded to Vue 3.
+
+You can read the full list of changes [here](https://github.com/remp2020/remp/releases/tag/4.3.0).
+
 ### 12-Dec-2025: CRM release (4.4)
 
 After more than two months we have some new features to present. This release is the last within v4, next one will include some breaking changes and drop of some older versions of dependencies. Please plan accordingly.
