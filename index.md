@@ -8,6 +8,25 @@
 
 **04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
 
+### 12-Dec-2025: CRM release (4.4)
+
+After more than two months we have some new features to present. This release is the last within v4, next one will include some breaking changes and drop of some older versions of dependencies. Please plan accordingly.
+
+**IMPORTANT** update note:
+
+- We've added two new extra internal fields to recurrent payments - `chain_id` and `cycle` which will help us (and possibly you) to work with the recurrent payments in the future. Since the population can take some time, we've created command you need to run. If you don't run it, you should start seeing warnings triggered by the application that you need to run it at some point.
+  - Please run `payments:fill_recurrent_chain_tracking` during off-peak hours. Medium-sized installations should have it ready within seconds, larger installations could take minutes. Command is non-blocking and can be run multiple times.
+  - We recommend to pause `payments:charge` command during the run. If you don't pause the recurrent payment charging, please run the command twice to make sure, that payments charged during the first run are also flagged correctly.
+
+Now to the features:
+
+- Admin module now has dark mode. It's an AI-generated experiment, but good enough as a starting point. Admin now also disables buttons when submitted to prevent double submissions.
+- API logging options were extended and the redaction can now be configured. See API module's README for more information.
+- Admin widgets now support pagination. We've added the pagination to the most critical sections on the user detail page and we will continue in the future where necessary. We also improved user detail's addresses widget to be more compact.
+- Payments module now allows you to pause a subscription from within an admin interface. The feature is still experimental and currently off by default, you can enable it in the CRM admin config. There's no frontend to the feature, but you're free to create your own utilizing the available interface, or just start pausing subscriptions from within admin's subscription listing on the user detail page.
+
+There are also some performance improvements and minor fixes, you can see the full changelog [here](changelog/crm/4.4.md).
+
 ### 22-Sep-2025: CRM release (4.3)
 
 We hoped to bring some user-facing functional features in this release, but they weren't ready yet. It's not featureless one though:
