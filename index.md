@@ -1,5 +1,15 @@
 ## REMP Technical news
 
+### 07-Apr-2026: REMP release (5.0)
+
+Together with CRM we're releasing REMP tools as well. Again, we've dropped support for PHP 8.2 and recommend use of PHP 8.4 from now on. There wasn't that much breaking changes here, but we still recommend looking at the changelog.
+
+- Campaign's debugger is now much more usable.
+- Mailer has now support for "preheader" field in the email.
+- And all tools received extra bugfixes and performance improvements, as usual.
+
+You can read the full list of changes [here](https://github.com/remp2020/remp/releases/tag/5.0.1).
+
 ### 07-Apr-2026: CRM release (5.0)
 
 The next major release brings support for PHP 8.4 and also drops support for PHP 8.2. From now on we recommend running CRM on PHP 8.4. The upgrade required us to make a lot of dependencies updates and caused some integration breaking changes. Proceed with caution if you extend the CRM yourself.
