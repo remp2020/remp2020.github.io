@@ -1,12 +1,16 @@
 ## REMP Technical news
 
-**Technical announcements:** 
+### 07-Apr-2026: CRM release (5.0)
 
-**29-Apr-2025**: REMP 4.0 dropped support for PHP 8.1 and requires PHP 8.2 or newer. We recommend using PHP 8.3 in production environment.
+The next major release brings support for PHP 8.4 and also drops support for PHP 8.2. From now on we recommend running CRM on PHP 8.4. The upgrade required us to make a lot of dependencies updates and caused some integration breaking changes. Proceed with caution if you extend the CRM yourself.
 
-**03-Apr-2025**: CRM 4.0 dropped support for PHP 8.1. CRM now requires PHP 8.2 and newer. We recommend using PHP 8.3 in production environment. Minimum MySQL version (due to features we might require in some of our modules) is 8.0.31.
+- CRM skeleton got its dev dependencies and Docker PHP image updated. See the changes [here](https://github.com/remp2020/crm-skeleton/commit/ac87beaeee702f2872075dc0223b177fc358c207).
+- New Stripe Billing payment gateway was added, to support Stripe-managed charging of users.
+- Added new condition to scenarios selecting cycle of recurrent payment.
+- Accidentally stopped trial upgrades can now be restored from admin.
+- Lots of minor fixes and improvements.
 
-**04-Sep-2024**: Since REMP tools v3.9, the primary Elasticsearch version we support is v8. We made sure that there's backwards compatibility with the v7, so you still have time to upgrade your database. The compatibility will only be enforced by the end of this year. After January 2025 the compatibility will most likely still be in place, but will not be guaranteed by us.
+Make sure you go through the changelog if you extend the CRM, this time more than usually: [changelog](changelog/crm/5.0.md).
 
 ### 12-Dec-2025: REMP release (4.3)
 
