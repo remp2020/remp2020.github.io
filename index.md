@@ -1,5 +1,19 @@
 ## REMP Technical news
 
+### 23-Jun-2026: CRM release (5.1)
+
+After some time we have couple of new features and quality of life improvements.
+
+- Underlying Nette framework brought some breaking changes within their upgrades that we needed to incorporate. See more in the Changelog.
+- All CodeMirror inputs in administration can now be toggled full-screen.
+- FamilyModule renewals are now asynchronous, fixing issues for multi-children parents.
+- Improved speed of Retention analysis execution.
+- Checkout form in ProductsModule now allows you to select existing addresses.
+- RempMailer module brings new "setting up" page which you can display to user right after the registration, so that scenarios have time to subscribe post-registration newsletters first.
+- You can now undo in scenarios (CTRL+Z).
+
+There were also numerous internal changes and fixes. You can see the full changelog [here](changelog/crm/5.1.md).
+
 ### 07-Apr-2026: REMP release (5.0)
 
 Together with CRM we're releasing REMP tools as well. Again, we've dropped support for PHP 8.2 and recommend use of PHP 8.4 from now on. There wasn't that much breaking changes here, but we still recommend looking at the changelog.
