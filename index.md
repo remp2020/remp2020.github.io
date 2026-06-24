@@ -1,5 +1,19 @@
 ## REMP Technical news
 
+### 24-Jun-2026: REMP release (5.1)
+
+There's a bunch of new features in REMP tools too!
+
+- Mailer now supports external newsletter lists. If you ever had a list of emails collected in different service, you can now flag the newsletter as external and manage the subscribers manually without them being present in your CRM.
+  - External newsletters cannot be segmented in jobs.
+  - They also use their own in-Mailer unsubscribe page.
+- You can now manage newsletter list variants within Mailer admin.
+- We added JsonLD extractor for metadata, and renamed the original one to OpenGraphPageContent.
+- Campaign now has IP-address based targetting.
+- And Beam's Segments API now has fully swapped library for communication with Elasticsearch.
+
+You can see the full changelog [here](https://github.com/remp2020/remp/releases/tag/5.1.0).
+
 ### 23-Jun-2026: CRM release (5.1)
 
 After some time we have couple of new features and quality of life improvements.
