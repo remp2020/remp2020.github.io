@@ -1,5 +1,17 @@
 ## REMP Technical news
 
+### 11-Sep-2026: REMP release (5.2)
+
+This is a bigger (mainly technical) release, please read the log carefully.
+
+- We altered structure of `mail_logs` table which could get very big by now with the primary focus to get it partitioned. There's some work for you to do after you release the next version, so please read [MAIL_LOGS_PARTITIONING.md](https://github.com/remp2020/mailer-module/blob/master/docs/MAIL_LOGS_PARTITIONING.md) before deploying the new version.
+- Thanks to the partitioning, we were able to improve Mailer's stability and performance.
+- Mailer now allows you to set access right to the settings page. See [Permission management](https://github.com/remp2020/mailer-module/tree/master#permission-management) and `configuration:update` resource. We strongly recommend to allow only selected subset of users to be able to access this page.
+- Specific newsletters can now be excluded from search in order to improve speed of search.
+- In Campaign, we added tracking-related JS functions to the custom JS of banners to help you with tracking (when manual tracking is set on the banner).
+
+The full changelog is availabl [here](https://github.com/remp2020/remp/releases/tag/5.2.1).
+
 ### 24-Jun-2026: REMP release (5.1)
 
 There's a bunch of new features in REMP tools too!
