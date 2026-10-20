@@ -1,5 +1,17 @@
 ## REMP Technical news
 
+### 20-Oct-2026: Churn Prediction module
+
+We have released the new Churn Prediction module.
+
+How it works: 
+- The module uses Google BigQuery to train an XGBoost machine learning model and generate churn probability scores for active subscribers. 
+- It introduces a new `churn:run_pipeline` command to aggregate CRM user data into BigQuery, which is combined with user engagement data from REMP Beam (using historical data for model training and current data for inference). 
+- Once BigQuery handles the training and scoring, predictions can be imported back into the CRM via `churn:download_churn_predictions` command. 
+- With user churn scores in CRM, you can build custom segments and trigger automated retention campaigns.
+
+Module is now available as a standard CRM module [here](https://github.com/remp2020/crm-churn-prediction-module).
+
 ### 11-Sep-2026: REMP release (5.2)
 
 This is a bigger (mainly technical) release, please read the log carefully.
@@ -10,7 +22,7 @@ This is a bigger (mainly technical) release, please read the log carefully.
 - Specific newsletters can now be excluded from search in order to improve speed of search.
 - In Campaign, we added tracking-related JS functions to the custom JS of banners to help you with tracking (when manual tracking is set on the banner).
 
-The full changelog is availabl [here](https://github.com/remp2020/remp/releases/tag/5.2.1).
+The full changelog is available [here](https://github.com/remp2020/remp/releases/tag/5.2.1).
 
 ### 24-Jun-2026: REMP release (5.1)
 
