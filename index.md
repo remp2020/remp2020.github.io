@@ -1,5 +1,15 @@
 ## REMP Technical news
 
+### 06-Nov-2026: CRM release (5.2)
+
+It took us couple of months, but the new version of CRM is now here.
+
+- There's new debugger tool for scenarios allowing you to verify user passages within scenario.
+- Upgrade schemas can now be assigned within CRM administration (both subscription types and funnels).
+- Lots of fixes (some of them already made available as hotfix for older versions) and small improvements all around.
+
+You can see the full changelog [here](changelog/crm/5.2.md).
+
 ### 20-Oct-2026: Churn Prediction module
 
 We have released the new Churn Prediction module.
